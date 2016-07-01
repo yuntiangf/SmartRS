@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/view_top_corner"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:ignore="UselessParent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dp" >
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="取消"
+                android:textColor="@color/textcolor_select"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/btn_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/sure"
+                android:textColor="@color/textcolor_select"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_content"
+            style="@style/Dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <NumberPicker
+                android:id="@+id/np1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                tools:ignore="NewApi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="年"
+                android:textColor="@color/black_text"
+                android:textSize="20sp" />
+
+            <NumberPicker
+                android:id="@+id/np2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                tools:ignore="NewApi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="月"
+                android:textColor="@color/black_text"
+                android:textSize="20sp" />
+
+            <NumberPicker
+                android:id="@+id/np3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                tools:ignore="NewApi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="日"
+                android:textColor="@color/black_text"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

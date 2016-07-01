@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="gray_background">#ffececec</color>
+    <color name="black">#000000</color>
+    <color name="red">#E51A18</color>
+    <color name="line_color">#523E2E</color>
+    <color name="search_tab_nomarl">#363636</color>
+    <color name="search_tab_select">#E82926</color>
+    <color name="menu_item_text_color">#E60200</color>
+    <color name="news_item_has_read_textcolor">#828282</color>
+    <color name="news_item_no_read_textcolor">#363636</color>
+    <color name="white">#ffffffff</color>
+    <color name="theme_background">#e93c67</color>
+    <color name="light_grey">#aaaaaa</color>
+    <color name="light_semi_transparent">#a0000000</color>
+    <color name="theme_background_01">#ed6385</color>
+    <color name="black_text">#ff414141</color>
+    <color name="theme_transparent">#bfe93c67</color>
+
+    <drawable name="background">#f0f0f0</drawable>
+    <drawable name="oneToEight_transparent">#2f000000</drawable>
+    <drawable name="five_transparent">#8f000000</drawable>
+   <drawable name="ltgray">#ffcccccc</drawable>
+    <drawable name="three_transparent">#5f000000</drawable>
+
+    <color name="gray">#ff777777</color>
+
+    <drawable name="one_transparent">#14000000</drawable>
+    <drawable name="theme_background_1">#ed6385</drawable>
+
+    <color name="select_bg_gray">#e7e6e2</color>
+    <color name="deep_gray">#B5B5B6</color>
+    <color name="list_text_name_color">#333333</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>  
+    
+    <color name="light_grey_font">#dfcfcf</color>
+
+</resources>

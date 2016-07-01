@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/menudetaillayout"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:focusable="true" >
+
+        <shengzhe.haiyan.smartrs.view.MyScrollView
+            android:id="@+id/mScrollView"
+            style="@style/mScrollView"
+            android:focusable="false"
+            android:focusableInTouchMode="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+               <include layout="@layout/layout_artist_info" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/view_my_bg_normal"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/goods_detail_pic_height"
+                        tools:ignore="UselessParent" >
+
+                        <ImageView
+                            android:id="@+id/detail_picture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/donggua" />
+
+                        <LinearLayout
+                            android:id="@+id/gallery_point_linear"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/bg_black_round"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp" >
+
+                            <TextView
+                                android:id="@+id/menu_detail_name"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="ssssssss"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/layout_product_detail" />
+            </LinearLayout>
+        </shengzhe.haiyan.smartrs.view.MyScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

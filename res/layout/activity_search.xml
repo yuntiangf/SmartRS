@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+    
+    <!-- <FrameLayout
+        android:id="@+id/menu_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_search_contact"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/tag_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:hint="搜索景点名称、关键字"
+            android:lines="1"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/tag_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/saoyisao" />
+    </FrameLayout> -->
+    
+    <TextView 
+        android:id="@+id/hot_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dp"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/theme_background"
+        />
+
+    <shengzhe.haiyan.smartrs.view.KeywordsFlow
+        android:id="@+id/keywordsflow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusableInTouchMode="true" />
+
+</LinearLayout>

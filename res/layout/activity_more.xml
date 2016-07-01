@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar" />
+
+    <shengzhe.haiyan.smartrs.view.MyVerticalScrollView
+        android:id="@+id/srcollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_grey" />
+
+            <shengzhe.haiyan.smartrs.view.ExpandableListViewForScrollView
+                android:id="@+id/list_help"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:childDivider="#00000000"
+                android:divider="@drawable/ltgray"
+                android:dividerHeight="1.0px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:background="@color/light_grey" />
+        </LinearLayout>
+    </shengzhe.haiyan.smartrs.view.MyVerticalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">5dp</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">2.0dip</dimen>
+    <dimen name="bottom_tab_font_size">12.0sp</dimen>
+    <dimen name="title_bar_height">50dip</dimen>
+    <dimen name="text_size_xlarge">20.0sp</dimen>
+    <dimen name="text_size_xsmall">14.0sp</dimen>
+    <dimen name="title_button_left_width">30dip</dimen>
+    <dimen name="text_size_large">18.0sp</dimen>
+    <dimen name="listview_top_height">14.0dp</dimen>
+    <dimen name="text_size_small">16.0sp</dimen>
+    <dimen name="text_size_xxsmall">12.0sp</dimen>
+    <dimen name="goods_detail_pic_height">250.0dip</dimen>
+    <dimen name="photo_width_height">80dp</dimen>
+    <dimen name="vertical_interval">10dp</dimen>
+    <dimen name="edit_login_height">45.0dp</dimen>
+    <dimen name="card_content_margin_top">10.0dip</dimen>
+    <dimen name="text_lenght">150dp</dimen>
+    
+    <dimen name="textSize_large">18sp</dimen>
+
+</resources>

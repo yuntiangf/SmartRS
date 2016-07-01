@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lishizhen3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/question_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="中医体质测试"
+            android:textColor="#ff0000"
+            android:textSize="25dp" />
+
+        <!--
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.0" >
+        </ListView>
+        -->
+  
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:layout_margin="8dp"
+                android:background="@drawable/abc_ab_share_pack_holo_light" />
+        
+        <Button
+                android:id="@+id/stratDetection"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+               	android:layout_gravity="center"
+                android:background="@drawable/choose_bg_normal"
+                android:text="	开始测试	"
+                android:textSize="20dp"
+                android:visibility="gone" />
+        
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/pagerNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="第 1 页/共 7 页"
+                    android:textColor="#ff0000"
+                    android:textSize="18dp" />
+
+                <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/textView"
+                    android:paddingRight="3dp"
+                    android:gravity="center"
+                    android:text="已选"
+                    android:textColor="#000000"
+                    android:textSize="15dp" /> -->
+                
+                <TextView
+                    android:id="@+id/text_choosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/textView2"
+                    android:paddingRight="3dp"
+                    android:text="0"
+                    android:textColor="@color/red"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="15dp"
+                    android:gravity="center"
+                    android:text="/ 67"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

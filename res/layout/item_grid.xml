@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_person_center_bg" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/ItemImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            tools:ignore="ContentDescription" 
+            android:src="@drawable/icon_suoyou"/>
+
+        <TextView
+            android:id="@+id/ItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ItemImage"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/icon_text_color"
+            android:text="所有菜品">
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@drawable/a6">
+
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2"/>
+    <Button 
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="开始测试"
+        android:textSize="20dp"
+        android:background="@drawable/choose_bg_normal"/>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"/>
+     
+	<Button 
+	    android:id="@+id/about"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.5"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginLeft="5dp"
+	    android:text="详细解读"
+        android:textSize="20dp"
+        android:background="@drawable/choose_bg_normal"/>
+	<View 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"/>
+</LinearLayout>

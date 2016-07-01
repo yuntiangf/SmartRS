@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+				<shengzhe.haiyan.smartrs.view.MyGallery 
+				    android:id="@+id/gallery"
+				    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+				
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="bottom"
+                    android:background="#33000000"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/dot_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图片标题"
+                        android:textColor="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:id="@+id/dot_0"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/dot_normal" />
+
+                        <View
+                            android:id="@+id/dot_1"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/dot_normal" />
+
+                        <View
+                            android:id="@+id/dot_2"
+                             android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/dot_normal" />
+
+                      <View
+                            android:id="@+id/dot_3"
+                             android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/dot_normal" />
+
+                        <View
+                            android:id="@+id/dot_4"
+                             android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/dot_normal" /> 
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#DCDCDC"
+            android:fadingEdge="none"
+            android:listSelector="@null"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="3dp"
+            android:numColumns="2"
+            android:rowCount="3"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</RelativeLayout>

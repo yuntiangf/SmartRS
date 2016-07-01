@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:layout_gravity="top"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/theme_background" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentBottom="true"
+            android:background="#D12858" />
+
+        <include
+            android:id="@+id/title"
+            layout="@drawable/title_text" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35.0dp"
+            android:layout_height="35.0dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_back"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/home_to_class"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/top_bar_menu"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/image_share"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/scan"
+            android:visibility="gone" />
+        
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/shopping_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dp"
+            android:background="@drawable/btn_shopping_cart"
+            android:visibility="gone" />
+        
+        <TextView 
+            android:id="@+id/edit"
+            android:layout_width="50.0dp"
+            android:layout_height="match_parent"
+            android:text="@string/sure"
+            android:layout_marginRight="10.0dp"
+            android:textColor="@color/textcolor_sure"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_xlarge"
+            />
+        <TextView 
+            android:id="@+id/needknow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/invoice_needknow"
+            android:layout_marginRight="10.0dp"
+            android:textColor="@color/textcolor_sure"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_xsmall"
+            />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15.0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_bar"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/searchFrame"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/title_button_left_width"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text="搜索"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/textcolor_sure"
+                 />
+
+            <RelativeLayout
+                android:id="@+id/rlSearchFrameDelete"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btnSearch"
+                android:gravity="center_vertical" >
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="25dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="请输入文字..."
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ivDeleteText"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:padding="10dp"
+                    android:src="@drawable/delete"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/bar_network_error" />
+
+</LinearLayout>
